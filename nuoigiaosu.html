@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRANT PROPOSAL: NUÔI GIÁO SƯ - MINH BẠCH HỌC THUẬT</title>
+    <title>ĐỀ XUẤT TÀI TRỢ: NUÔI GIÁO SƯ - MINH BẠCH HỌC THUẬT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
@@ -11,12 +11,12 @@
     <style>
         :root {
             --primary-color: #1a365d; /* Xanh học thuật đậm */
-            --accent-color: #c53030; /* Đỏ nhấn mạnh (cho nợ/chú ý) */
+            --accent-color: #c53030; /* Đỏ nhấn mạnh */
             --bg-color: #f7f9fc;
             --paper-color: #ffffff;
             --text-color: #2d3748;
             --border-color: #e2e8f0;
-            --highlight-bg: #fffaf0; /* Màu giấy cũ */
+            --highlight-bg: #fffaf0; 
         }
 
         * { box-sizing: border-box; }
@@ -46,7 +46,6 @@
             border-top: 5px solid var(--accent-color);
         }
 
-        /* Header phong cách tạp chí khoa học */
         header {
             background: linear-gradient(135deg, var(--primary-color), #2c5282);
             color: #fff;
@@ -70,14 +69,8 @@
             font-size: 1.1rem;
         }
 
-        .content-wrapper {
-            padding: 40px;
-        }
-
-        /* Section Styling */
-        .section {
-            margin-bottom: 50px;
-        }
+        .content-wrapper { padding: 40px; }
+        .section { margin-bottom: 50px; }
 
         h2 {
             font-size: 1.5rem;
@@ -89,7 +82,6 @@
             gap: 10px;
         }
 
-        /* Highlight box */
         .alert-box {
             background-color: #fff5f5;
             border-left: 4px solid var(--accent-color);
@@ -100,7 +92,6 @@
             border-radius: 4px;
         }
 
-        /* Lists */
         ul.transparency-list li {
             margin-bottom: 12px;
             position: relative;
@@ -114,10 +105,7 @@
             font-weight: bold;
         }
 
-        /* Table Styling */
-        .table-container {
-            overflow-x: auto;
-        }
+        .table-container { overflow-x: auto; }
         
         table {
             width: 100%;
@@ -141,21 +129,10 @@
             letter-spacing: 0.5px;
         }
 
-        tr:nth-child(even) {
-            background-color: #f8fafc;
-        }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        tr:hover { background-color: #edf2f7; }
+        .highlight-cell { background-color: #c6f6d5 !important; color: #22543d; font-weight: bold; }
 
-        tr:hover {
-            background-color: #edf2f7;
-        }
-
-        .highlight-cell {
-            background-color: #c6f6d5 !important;
-            color: #22543d;
-            font-weight: bold;
-        }
-
-        /* Calculator Styling */
         .calculate-box {
             background: var(--highlight-bg);
             border: 1px solid #ecc94b;
@@ -186,12 +163,7 @@
             transition: all 0.2s;
             margin-left: 10px;
         }
-
-        button:hover {
-            background-color: #2c5282;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
+        button:hover { background-color: #2c5282; transform: translateY(-2px); }
 
         #result {
             margin-top: 20px;
@@ -201,7 +173,6 @@
             font-weight: bold;
         }
 
-        /* Pre-publications */
         .publication-item {
             background: white;
             border: 1px solid var(--border-color);
@@ -210,10 +181,7 @@
             border-radius: 6px;
             transition: transform 0.2s;
         }
-        .publication-item:hover {
-            transform: translateX(5px);
-            border-color: var(--primary-color);
-        }
+        .publication-item:hover { transform: translateX(5px); border-color: var(--primary-color); }
         .journal-tag {
             display: inline-block;
             background: #e2e8f0;
@@ -226,7 +194,36 @@
             margin-bottom: 5px;
         }
 
-        /* Footer */
+        /* Styling riêng cho phần Donate QR */
+        .donate-wrapper {
+            background-color: #ebf8ff;
+            border: 2px dashed #2b6cb0;
+            padding: 40px;
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 40px;
+        }
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border: 1px solid #cbd5e0;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #a0aec0;
+            font-style: italic;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .donate-title {
+            color: #2c5282;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
         footer {
             background-color: #edf2f7;
             padding: 30px;
@@ -236,7 +233,6 @@
             border-top: 1px solid var(--border-color);
         }
 
-        /* Mobile Responsive */
         @media (max-width: 600px) {
             .content-wrapper { padding: 20px; }
             header h1 { font-size: 1.5rem; }
@@ -256,8 +252,8 @@
         <div class="content-wrapper">
             
             <section class="section">
-                <h2>🔬 Tuyên Bố Sứ Mệnh (Mission Statement)</h2>
-                <p>Dự án này huy động nguồn lực cộng đồng (Crowdfunding) để tài trợ cho quá trình <b>nghiên cứu chuyên sâu</b> và <b>duy trì sự sống sinh học</b> của một nhà khoa học trẻ trên con đường chinh phục danh hiệu Giáo Sư.</p>
+                <h2>🔬 Tuyên Bố Sứ Mệnh</h2>
+                <p>Dự án này huy động nguồn lực cộng đồng để tài trợ cho quá trình <b>nghiên cứu chuyên sâu</b> và <b>duy trì sự sống sinh học</b> của một nhà khoa học trẻ trên con đường chinh phục danh hiệu Giáo Sư.</p>
                 
                 <div class="alert-box">
                     ⚠️ Mức tài trợ khuyến nghị: 10.000 VNĐ/tháng
@@ -266,18 +262,18 @@
             </section>
             
             <section class="section">
-                <h2>📜 Cam Kết Minh Bạch (Transparency Policy)</h2>
+                <h2>📜 Cam Kết Minh Bạch</h2>
                 <p>Chúng tôi áp dụng tiêu chuẩn "Sao Kê Sao Y Bản Chính" nghiêm ngặt nhất:</p>
                 <ul class="transparency-list" style="list-style: none; padding: 0;">
-                    <li><b>Real-time Auditing:</b> Mọi giao dịch chi tiêu > 1.000 VNĐ sẽ được cập nhật.</li>
-                    <li><b>Independent Auditor:</b> Kiểm toán viên độc lập là <b>Mẹ tôi</b> (người duy nhất soi kỹ hóa đơn trà đá hơn cả cơ quan thuế).</li>
-                    <li><b>Accountability:</b> Mọi thất bại trong nghiên cứu sẽ được công bố đầy đủ (trừ khi tôi quá đói để gõ phím).</li>
-                    <li><b>KPI:</b> Cam kết nỗ lực 100% (sau khi đã ăn no).</li>
+                    <li><b>Kiểm toán thời gian thực:</b> Mọi giao dịch chi tiêu > 1.000 VNĐ sẽ được cập nhật.</li>
+                    <li><b>Kiểm toán viên độc lập:</b> Do <b>Mẹ tôi</b> đảm nhiệm (người duy nhất soi kỹ hóa đơn hơn cả cơ quan thuế).</li>
+                    <li><b>Trách nhiệm giải trình:</b> Mọi thất bại trong nghiên cứu sẽ được công bố đầy đủ (trừ khi tôi quá đói để gõ phím).</li>
+                    <li><b>Chỉ số hiệu suất (KPI):</b> Cam kết nỗ lực 100% (sau khi đã ăn no).</li>
                 </ul>
             </section>
 
             <section class="section">
-                <h2>🆚 Phân Tích So Sánh (Comparative Analysis)</h2>
+                <h2>🆚 Phân Tích So Sánh</h2>
                 <div class="table-container">
                     <table class="comparison-table">
                         <thead>
@@ -309,74 +305,90 @@
             </section>
 
             <section class="section">
-                <h2>🧮 Dự Phóng Tài Chính (Financial Projection)</h2>
+                <h2>🧮 Dự Phóng Tài Chính</h2>
                 <div class="calculate-box">
-                    <p>Nhập số "Thập niên" (Decades) dự kiến để hoàn thành công trình:</p>
+                    <p>Nhập số "Thập niên" dự kiến để hoàn thành công trình:</p>
                     <div style="margin: 20px 0;">
                         <input type="number" id="decades" value="2" min="1"> 
                         <span style="font-weight: bold; margin: 0 10px;">Thập niên</span>
                         <button onclick="calculateCost()">Tính Tổng Vốn</button>
                     </div>
                     <div id="result"></div>
-                    <p style="font-size: 0.8rem; font-style: italic; margin-top: 10px;">*Đã bao gồm lạm phát giá mì tôm*</p>
+                    <p style="font-size: 0.8rem; font-style: italic; margin-top: 10px;">*Đã bao gồm chỉ số lạm phát giá mì tôm*</p>
                 </div>
             </section>
 
             <section class="section">
-                <h2>📑 Báo Cáo Giải Ngân (Disbursement Report)</h2>
+                <h2>📑 Báo Cáo Giải Ngân</h2>
                 <p>Chi tiết phân bổ nguồn vốn 10.000 VNĐ:</p>
                 <table>
                     <thead>
                         <tr>
                             <th width="30%">Hạng Mục</th>
                             <th width="40%">Mô tả Khoa Học</th>
-                            <th width="30%">Impact Factor</th>
+                            <th width="30%">Hệ Số Tác Động</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><b>Năng lượng Sinh học</b></td>
                             <td>1/2 Gói mì tôm (Duy trì sự sống)</td>
-                            <td>High Impact (Sống mới làm được)</td>
+                            <td>Tác động cao (Sống mới làm được)</td>
                         </tr>
                         <tr>
                             <td><b>Cơ sở hạ tầng</b></td>
                             <td>Sạc pin dự phòng (Ghi chú ý tưởng)</td>
-                            <td>Critical Infrastructure</td>
+                            <td>Hạ tầng thiết yếu</td>
                         </tr>
                         <tr>
-                            <td><b>Đối ngoại</b></td>
+                            <td><b>Giao tiếp đối ngoại</b></td>
                             <td>Phí 4G gửi mail xin gia hạn deadline</td>
-                            <td>Strategic Communication</td>
+                            <td>Chiến lược ngoại giao</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
             <section class="section">
-                <h2>📝 Danh Mục Công Bố (Pre-Publications)</h2>
+                <h2>📝 Danh Mục Công Bố Sơ Bộ</h2>
                 
                 <div class="publication-item">
-                    <div class="journal-tag">Nature of Sleep</div>
+                    <div class="journal-tag">Tạp chí Giấc Ngủ Tự Nhiên</div>
                     <strong>Ảnh hưởng của cà phê đen đến chu kỳ REM của nhà khoa học nghèo.</strong>
                     <div style="font-size: 0.9em; color: #666; margin-top: 5px;">Tác giả: Tôi & Cái phin cà phê.</div>
                 </div>
 
                 <div class="publication-item">
-                    <div class="journal-tag">Journal of Procrastination</div>
-                    <strong>Phân tích định lượng mối tương quan nghịch biến giữa deadline và tốc độ gõ phím.</strong>
+                    <div class="journal-tag">Tạp chí Trì Hoãn Học</div>
+                    <strong>Phân tích định lượng mối tương quan nghịch biến giữa thời hạn chót (deadline) và tốc độ gõ phím.</strong>
                 </div>
 
                 <div class="publication-item">
-                    <div class="journal-tag">Quantum Physics of Hunger</div>
+                    <div class="journal-tag">Vật Lý Lượng Tử Của Cơn Đói</div>
                     <strong>Lý thuyết hố đen trong dạ dày: Khi kiến thức đi vào thì calo đi đâu?</strong>
                 </div>
 
             </section>
+
+            <section class="donate-wrapper">
+                <h2 style="justify-content: center; border: none; margin-bottom: 0;">💳 CỔNG TÀI TRỢ HỌC THUẬT</h2>
+                <p style="margin-top: 5px; color: #4a5568;">Chấp nhận chuyển khoản liên ngân hàng 24/7</p>
+                
+                <div class="qr-placeholder">
+                    [Khu vực dán mã QR]
+                </div>
+                
+                <div style="background: white; padding: 15px; border-radius: 6px; display: inline-block; text-align: left; margin-top: 10px; border: 1px solid #e2e8f0;">
+                    <div><strong>Chủ tài khoản:</strong> GIÁO SƯ TƯƠNG LAI</div>
+                    <div><strong>Nội dung chuyển khoản:</strong> TAI TRO KHOA HOC [TEN BAN]</div>
+                    <div style="margin-top: 10px; font-size: 0.9em; color: #c53030;">*Lưu ý: Vui lòng không ghi "Ủng hộ mì tôm" để giữ gìn hình ảnh khoa học.</div>
+                </div>
+            </section>
+
         </div>
 
         <footer>
-            <p>&copy; 2025 Academic Transparency Project.<br>Tài trợ cho trí tuệ cá nhân, vì lợi ích của khoa học (và dạ dày).</p>
+            <p>&copy; 2025 Dự Án Minh Bạch Học Thuật.<br>Tài trợ cho trí tuệ cá nhân, vì lợi ích của khoa học (và dạ dày).</p>
         </footer>
     </div>
 
@@ -408,7 +420,6 @@
             resultDiv.style.color = '#c53030';
         }
         
-        // Chạy mặc định khi tải trang
         document.addEventListener('DOMContentLoaded', calculateCost);
     </script>
 
